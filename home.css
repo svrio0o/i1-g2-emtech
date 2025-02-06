@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+    cursor: default;
+}
+
+html {
+    padding: 10px;
+    background-color: #c5c5c5;
+}
+
+html #home img {
+        width: 100%
+    
+}
+
+html body section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+html body div#cover {
+    text-align:  center;
+    height: 150px;
+}
+html body div#cover img {
+    width: 100%;
+    height: 180px;
+}
+
+html body div#nav div {
+    display: flex;
+}
+
+html body div#nav div button {
+    margin: 20px 60px 0 5px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+html body div#menu div#button div p {
+    font-size: 45px;
+    color: white;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+html body div#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+html body div#menu div#headings {
+    width: 840px;
+}
+
+html body div#menu div#headings h1 {
+    font-size: 70px;
+    font-family: Racing Sans One;
+    font-weight: normal;
+    margin: 70px 0px 5px 0px;
+}
+html body div#menu div#headings h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+html body div#menu img {
+    border-radius: 100%;
+    border: 25px solid white;
+    margin: -100px 0 0 0px;
+    width: 245px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    min-width: 300px;
+}
+
+html body div#menu div#button {
+    align-content:center;
+    
+}
+
+html body div#menu div#button  {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+} 
+
+html body div#menu div#button div {
+    text-align: center;
+    align-content: center;
+    background-color: #62a5ff;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 20%;
+}
+
+html body section#post div img {
+    border-radius: 50%;
+    border: 5px solid #c0c0c0;
+    margin: 0px 0 0 0px;
+    width: 105px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+html #members section#post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;  /* Prevents wrapping */
+}
+
+html #about section#post {
+}
+
+html body section#post div#banner {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+html body section#post div#banner div {
+    margin: 20px;
+}
+
+html body section#post div#banner div h5 {
+    font-size: 35px;
+    font-family: 'Racing Sans One';
+    margin: 0;
+    font-weight: 100;
+}
+
+
+html body section#post div#banner div h6 {
+    font-size: 20px;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#banner > div > h5 {
+    font-family: racing-sans-one-regular
+}
+
+
+#post p {
+    font-size: 40px;
+}
+
+#post div.story {
+    display: flex;
+    border-radius: 20px;
+    flex-shrink: 0;
+    background-color: blue;
+    height: 300px;
+    margin-right: 10px;
+    width: 189px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#post div  p {
+    font-size: 10px !important;
+    font-family: sans-serif;
+}
+
+#post > .story > img {
+    border-color: white;
+    margin: 15px 0 0 15px;
+    width: 50px
+}
+
+
+
+#members #post div  p {
+    font-size: 15px !important;
+    font-family: sans-serif;
+    margin: 15px;
+    font-weight: bold;
+    color: white;
+    text-wrap: auto;
+}
