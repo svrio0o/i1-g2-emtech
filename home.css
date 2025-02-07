@@ -6,14 +6,25 @@
   font-style: normal;
 }
 
+html body {
+}
+
+html body section:nth-child(2) {
+    margin 20px 20px 20px 20px;
+    margin: 20px;
+}
 
 * {
     cursor: default;
 }
 
 html {
-    padding: 10px;
+    padding: 0;
     background-color: #c5c5c5;
+}
+
+html body {
+    margin: 0;
 }
 
 html #home img {
@@ -23,7 +34,6 @@ html #home img {
 
 html body section {
     background-color: white;
-    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -138,11 +148,12 @@ html #about section#post {
 html body section#post div#banner {
     display: flex;
     margin-bottom: 20px;
+    flex-direction: row;
 }
 
 
 html body section#post div#banner div {
-    margin: 20px;
+    margin: 0px 0px 0px 30px;
 }
 
 html body section#post div#banner div h5 {
@@ -180,6 +191,10 @@ html body section#post div#banner div h6 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#post div.story:nth-child(11) {
+    margin: 0;
 }
 
 #post div  p {
