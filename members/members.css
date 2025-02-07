@@ -106,3 +106,44 @@ img {
     0% {opacity: 0; transform: translate(0, 10px);}
    100% {opacity: 1; transform: translate(0, 0px);}
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector(".post");
+
+    // Enable scrolling with mouse wheel (Shift + Scroll for horizontal)
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY; // Horizontal scroll
+    });
+
+    // Enable click-and-drag scrolling
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollContainer.classList.add("active");
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scroll speed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+});
