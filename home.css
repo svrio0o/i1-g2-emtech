@@ -9,7 +9,7 @@
 html body {
 }
 
-html body section:nth-child(2) {
+html body section:not(:nth-of-type(1)) {
     margin 20px 20px 20px 20px;
     margin: 20px;
 }
@@ -27,11 +27,6 @@ html body {
     margin: 0;
 }
 
-html #home img {
-        width: 100%
-    
-}
-
 html body section {
     background-color: white;
     padding: 20px;
@@ -39,11 +34,13 @@ html body section {
 
 html body div#cover {
     text-align:  center;
-    height: 150px;
+    height: 59vh;
 }
 html body div#cover img {
     width: 100%;
     height: 180px;
+    min-height: 65vh;
+    object-fit: cover;
 }
 
 html body div#nav div {
@@ -51,7 +48,7 @@ html body div#nav div {
 }
 
 html body div#nav div button {
-    margin: 20px 60px 0 5px;
+    margin: 20px 60px 0 25px;
     font-size: 40px;
     background: none;
     border: none;
@@ -100,6 +97,7 @@ html body div#menu img {
     aspect-ratio: 1 / 1;
     height: auto;
     min-width: 300px;
+    object-fit: cover;
 }
 
 html body div#menu div#button {
@@ -124,7 +122,7 @@ html body div#menu div#button div {
     margin-right: 20%;
 }
 
-html body section#post div img {
+html body section.post div img, .post img {
     border-radius: 50%;
     border: 5px solid #c0c0c0;
     margin: 0px 0 0 0px;
@@ -133,30 +131,31 @@ html body section#post div img {
     height: auto;
 }
 
-html #members section#post {
+html #members section.post {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     white-space: nowrap;
     overflow-x: auto;
     flex-wrap: nowrap;  /* Prevents wrapping */
+    border-radius: 0px 0px 10px 10px;
 }
 
-html #about section#post {
+html #about section.post {
 }
 
-html body section#post div#banner {
+html body section.post div#banner {
     display: flex;
     margin-bottom: 20px;
     flex-direction: row;
 }
 
 
-html body section#post div#banner div {
+html body section.post div#banner div {
     margin: 0px 0px 0px 30px;
 }
 
-html body section#post div#banner div h5 {
+html body section.post div#banner div h5 {
     font-size: 35px;
     font-family: 'Racing Sans One';
     margin: 0;
@@ -164,7 +163,7 @@ html body section#post div#banner div h5 {
 }
 
 
-html body section#post div#banner div h6 {
+html body section.post div#banner div h6 {
     font-size: 20px;
     margin: 0;
     font-family: sans-serif;
@@ -176,12 +175,12 @@ html body section#post div#banner div h6 {
 }
 
 
-#post p {
+.post p {
     font-size: 40px;
     font-family: math;
 }
 
-#post div.story {
+.post div.story {
     display: flex;
     border-radius: 20px;
     flex-shrink: 0;
@@ -192,24 +191,27 @@ html body section#post div#banner div h6 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    background-size: cover;
 }
 
-#post div.story:nth-child(11) {
+.post div.story:nth-child(11) {
     margin: 0;
 }
 
-#post div  p {
+.post div  p {
     font-size: 10px !important;
     font-family: sans-serif;
 }
 
-#post > .story > img {
+.post > .story > img {
     border-color: white;
     margin: 15px 0 0 15px;
-    width: 50px
+    width: 50px;
+    object-fit: cover;
 }
 
-#members #post div  p {
+#members .post div  p {
     font-size: 15px !important;
     font-family: sans-serif;
     margin: 15px;
@@ -237,68 +239,78 @@ html body section#post div#banner div h6 {
 
 }
 
-#post > div {
-    cursor: pointer;
-}
-
 html body#soto {
     display: flex;
 }
 
-body.perInf {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+#diaz {
+    background-position-x: center;
+    background-image: url("members/randomDiaz.jpg");
+    background-position-x: center;
 }
-.profile-card {
-    display: flex;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 800px;
-    overflow: hidden;
+
+#magtagad {
+    background-position-x: center;
+    background-image: url("members/randomMagtagad.jpg");
+    background-position-x: center;
 }
-.profile-card .left {
-    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+#casuga {
+    background-position-x: center;
+    background-image: url("members/randomCasuga.jpg");
+    background-position-x: center;
 }
-.profile-card .left img {
-    width: 80%;
-    border-radius: 10px;
+
+#asiwagan {
+    background-position-x: center;
+    background-image: url("members/randomAsiwagan.jpg");
+    background-position-x: center;
 }
-.profile-card .right {
-    padding: 20px;
-    width: 65%;
+
+#campos {
+    background-position-x: center;
+    background-image: url("members/randomCampos.jpg");
+    background-position-x: center;
 }
-.profile-card h1 {
-    font-size: 24px;
-    margin: 0;
+
+
+#cruz {
+    background-position-x: center;
+    background-image: url("members/randomCruz.jpg");
+    background-position-x: center;
 }
-.profile-card .section {
-    margin: 20px 0;
+
+#jacobe {
+    background-position-x: center;
+    background-image: url("members/randomJacobe.jpg");
+    background-position-x: center;
 }
-.profile-card .section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #555;
+
+#soto {
+    background-position-x: center;
+    background-image: url("members/randomSoto.jpg");
+    background-position-x: center;
 }
-.profile-card .section p {
-    margin: 5px 0;
+
+
+#deGuzman {
+    background-position-x: center;
+    background-image: url("members/randomDeGuzman.jpg");
+    background-position-x: center;
 }
-.profile-card .icons {
-    display: flex;
-    justify-content: space-between;
+
+
+#agriam {
+    background-position-x: center;
+    background-image: url("members/randomAgriam.jpg");
+    background-position-x: center;
 }
-.profile-card .icons img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    background: #e0f7fa;
+
+
+#rioveros {
+    background-position-x: center;
+    background-image: url("members/randomRioveros.jpg");
+    background-position-x: center;
 }
