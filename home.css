@@ -18,6 +18,30 @@ html body section:not(:nth-of-type(1)) {
     cursor: default;
 }
 
+.post .create {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.create div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create > div > h2 {
+    background: #dfdede;
+    width: 85vw;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    font-family: system-ui;
+    font-size: 35px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
 html {
     padding: 0;
     background-color: #c5c5c5;
@@ -48,13 +72,20 @@ html body div#nav div {
 }
 
 html body div#nav div button {
-    margin: 20px 60px 0 25px;
+    margin: 0px 0px 0 25px;
     font-size: 40px;
     background: none;
     border: none;
     cursor: pointer;
     font-family: sans-serif;
     font-weight: bold;
+    width: 190px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+html body div#nav div button:hover {
+    background-color: #d0d0d0
 }
 
 
@@ -122,7 +153,7 @@ html body div#menu div#button div {
     margin-right: 20%;
 }
 
-html body section.post div img, .post img {
+html body section.post div img, .pfp {
     border-radius: 50%;
     border: 5px solid #c0c0c0;
     margin: 0px 0 0 0px;
@@ -179,7 +210,9 @@ html body section.post div#banner div h6 {
     font-size: 40px;
     font-family: math;
 }
-
+.post div.story:hover {
+     transform: scale(1.1);
+}
 .post div.story {
     display: flex;
     border-radius: 20px;
@@ -193,6 +226,7 @@ html body section.post div#banner div h6 {
     justify-content: space-between;
     cursor: pointer;
     background-size: cover;
+    transition: transform 0.1s ease-in-out;
 }
 
 .post div.story:nth-child(11) {
@@ -209,6 +243,7 @@ html body section.post div#banner div h6 {
     margin: 15px 0 0 15px;
     width: 50px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 #members .post div  p {
@@ -242,7 +277,6 @@ html body section.post div#banner div h6 {
 html body#soto {
     display: flex;
 }
-
 
 #diaz {
     background-position-x: center;

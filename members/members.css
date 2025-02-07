@@ -81,6 +81,10 @@ body {
     align-content: flex-start;
 }
 
+.profile-card .right .divider .section button:hover {
+    background-color: #0000006e
+}
+
 .profile-card .right .divider .section button {
     margin: 0 0px auto auto;
     display: block;
@@ -92,4 +96,13 @@ body {
     font-size: 40px;
     background-color: #00000017;
     cursor: pointer;
+}
+
+img {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0; transform: translate(0, 10px);}
+   100% {opacity: 1; transform: translate(0, 0px);}
 }
