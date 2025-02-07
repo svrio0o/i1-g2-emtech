@@ -28,6 +28,23 @@ html body section:not(:nth-of-type(1)) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.create div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.create div h3 {
+    margin: 0px 9vw;
+    font-size: 30px;
+    font-family: monospace;
 }
 
 .create > div > h2 {
@@ -158,8 +175,9 @@ html body section.post div img, .pfp {
     border: 5px solid #c0c0c0;
     margin: 0px 0 0 0px;
     width: 105px;
+    height: 105px;
     aspect-ratio: 1 / 1;
-    height: auto;
+    object-fit: cover;
 }
 
 html #members section.post {
@@ -211,7 +229,7 @@ html body section.post div#banner div h6 {
     font-family: math;
 }
 .post div.story:hover {
-     transform: scale(1.1);
+     transform: scale(1.05);
 }
 .post div.story {
     display: flex;
@@ -226,7 +244,7 @@ html body section.post div#banner div h6 {
     justify-content: space-between;
     cursor: pointer;
     background-size: cover;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.05s ease-in-out;
 }
 
 .post div.story:nth-child(11) {
@@ -241,7 +259,8 @@ html body section.post div#banner div h6 {
 .post > .story > img {
     border-color: white;
     margin: 15px 0 0 15px;
-    width: 50px;
+    width: 58px;
+    height:  58px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -293,7 +312,6 @@ html body#soto {
 
 #casuga {
     background-position-x: center;
-    background-image: url("members/randomCasuga.jpg");
     background-position-x: center;
 }
 
@@ -348,3 +366,5 @@ html body#soto {
     background-image: url("members/randomRioveros.jpg");
     background-position-x: center;
 }
+
+div#casuga.story {background: linear-gradient(0deg, #000000, #0048ff87);}
