@@ -9,3 +9,7 @@ function about() {
 function members() {
     window.location.href = "members.html"
 }
+
+function soto() {
+    window.location.href = "members/soto.html"
+}
