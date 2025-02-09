@@ -1,12 +1,22 @@
+@keyframes bgColor {
+    0% {background-position: 0% 50%;}
+        100% {
+    background-position: 100% 50%;
+}
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(45deg, #000000, transparent);
+    animation: 8399.76ms ease-in-out -5.61062ms infinite alternate none running bgColor;
+    background-size: 200% 200%;
 }
+
 .profile-card {
     display: flex;
     width: 100vw;
