@@ -12,9 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, #000000, transparent);
+    background: linear-gradient(222deg, #000000, #00127f);
     animation: 8399.76ms ease-in-out -5.61062ms infinite alternate none running bgColor;
     background-size: 200% 200%;
+    color: white;
 }
 
 .profile-card {
@@ -53,11 +54,10 @@ body {
 .profile-card .section h2 {
     font-size: 2rem;
     margin-bottom: 0px;
-    color: #000000;
 }
 .profile-card .section p {
     font-size: 1rem;
-    margin: 18px 0 0 0;
+    margin: 18px 0 0 20px;
 }
 .profile-card .icons {
     display: flex;
@@ -92,19 +92,19 @@ body {
 }
 
 .profile-card .right .divider .section button:hover {
-    background-color: #0000006e
+    background-color: #ffffff6e;
 }
 
 .profile-card .right .divider .section button {
     margin: 0 0px auto auto;
     display: block;
     width: 100px;
-    color: white;
+    color: #ffffff;
     height: 100px;
     border-radius: 50%;
     border: none;
     font-size: 40px;
-    background-color: #00000017;
+    background-color: #afafaf17;
     cursor: pointer;
 }
 
