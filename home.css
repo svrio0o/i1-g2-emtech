@@ -368,3 +368,8 @@ html body#soto {
 }
 
 div#casuga.story {background: linear-gradient(0deg, #000000, #0048ff87);}
+
+
+#home > section:nth-child(3) > img {
+    width: 100%;
+}
